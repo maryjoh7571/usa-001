@@ -1,31 +1,391 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-
-
 <head>
-
-
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="defender.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>uina</title>
-<!-- Privacy-friendly analytics by Plausible -->
-<script async src="https://plausible.io/js/pa-mp0xe8iDZ1SOEKt4ipBsT.js"></script>
-<script>
-  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
-  plausible.init()
-</script>
-
-  
-  <script type="module" crossorigin src="asessets/index-CBeZIqbbm.js"></script>
-  <link rel="stylesheet" crossorigin href="asessets/index-BarCoomi_.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Master ultra-crispy roasted potatoes with expert techniques, ingredient science, troubleshooting, flavor variations, and a complete farmhouse-style recipe guide.">
+<title>The Crispiest Roasted Potatoes | Hearth &amp; Harvest</title>
+<style>
+:root{
+  --cream:#f8f3e8;
+  --paper:#fffdf8;
+  --ink:#2e2a25;
+  --muted:#71685e;
+  --sage:#68765d;
+  --sage-dark:#46523e;
+  --terracotta:#b76443;
+  --gold:#d5a74a;
+  --line:#ded5c5;
+  --shadow:0 18px 50px rgba(59,44,27,.10);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Georgia,"Times New Roman",serif;line-height:1.75}
+a{color:inherit}
+.site-header{background:var(--sage-dark);color:#fffaf0}
+.topbar{max-width:1180px;margin:auto;padding:18px 24px;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.logo{font-size:1.25rem;letter-spacing:.08em;text-transform:uppercase;font-weight:bold}
+.nav{display:flex;gap:22px;font-family:Arial,sans-serif;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase}
+.nav a{text-decoration:none;opacity:.9}
+.hero{max-width:1180px;margin:auto;padding:74px 24px 84px;display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.eyebrow{font-family:Arial,sans-serif;color:var(--gold);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;font-weight:bold}
+h1{font-size:clamp(3rem,6vw,6.3rem);line-height:.98;margin:18px 0 24px;letter-spacing:-.04em}
+.hero p{font-size:1.22rem;max-width:650px;color:#f4eee2}
+.hero-card{background:#d9c39d;border-radius:24px;min-height:420px;position:relative;overflow:hidden;box-shadow:var(--shadow)}
+.hero-card:before{content:"";position:absolute;inset:0;background:
+radial-gradient(circle at 25% 32%,#c78b52 0 7%,transparent 8%),
+radial-gradient(circle at 58% 24%,#d29a5b 0 8%,transparent 9%),
+radial-gradient(circle at 75% 58%,#b87640 0 7%,transparent 8%),
+radial-gradient(circle at 38% 70%,#d09a5e 0 9%,transparent 10%),
+radial-gradient(circle at 78% 28%,#c28449 0 6%,transparent 7%),
+radial-gradient(circle at 20% 75%,#b8753e 0 8%,transparent 9%);
+filter:blur(1px)}
+.hero-card:after{content:"";position:absolute;inset:10%;border:2px solid rgba(255,250,235,.55);border-radius:50%;transform:rotate(-12deg)}
+.hero-note{position:absolute;bottom:26px;left:28px;right:28px;background:rgba(255,253,248,.9);padding:16px 18px;border-radius:14px;font-size:.95rem}
+main{max-width:1180px;margin:auto;padding:56px 24px 100px}
+.intro{max-width:800px;margin:0 auto 60px;text-align:center}
+.intro h2,.section h2{font-size:clamp(2rem,4vw,3.5rem);line-height:1.08;margin:12px 0 18px}
+.intro p{font-size:1.1rem;color:var(--muted)}
+.jump{background:var(--paper);border:1px solid var(--line);padding:24px;border-radius:18px;margin:30px auto 70px;max-width:900px;box-shadow:var(--shadow)}
+.jump strong{display:block;font-family:Arial,sans-serif;text-transform:uppercase;letter-spacing:.12em;font-size:.75rem;margin-bottom:12px}
+.jump-links{display:flex;flex-wrap:wrap;gap:10px}
+.jump-links a{background:#eee6d8;padding:8px 13px;border-radius:999px;text-decoration:none;font-size:.92rem}
+.section{max-width:860px;margin:0 auto 74px}
+.section h2{color:var(--sage-dark)}
+.section h3{font-size:1.55rem;line-height:1.2;margin-top:36px;color:var(--terracotta)}
+.section p{font-size:1.06rem}
+.section ul,.section ol{padding-left:1.4rem}
+.section li{margin:8px 0}
+.callout{background:#e7eadf;border-left:5px solid var(--sage);padding:22px 24px;margin:30px 0;border-radius:0 14px 14px 0}
+.recipe{background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:34px;box-shadow:var(--shadow);margin:36px 0}
+.recipe-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.recipe h3{margin-top:0}
+.recipe-meta{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 24px}
+.meta{background:#eee6d8;padding:8px 12px;border-radius:999px;font-family:Arial,sans-serif;font-size:.78rem}
+.tip-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:30px 0}
+.tip{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:20px}
+.tip b{font-family:Arial,sans-serif;color:var(--terracotta);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}
+.table-wrap{overflow:auto}
+table{width:100%;border-collapse:collapse;background:var(--paper);margin:25px 0}
+th,td{text-align:left;padding:14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:#e7eadf;font-family:Arial,sans-serif;font-size:.82rem;text-transform:uppercase;letter-spacing:.06em}
+.faq{border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line);padding:18px 0}
+.faq summary{cursor:pointer;font-weight:bold;font-size:1.1rem}
+.cta{background:var(--terracotta);color:#fffaf0;border-radius:24px;padding:40px;text-align:center;margin-top:80px}
+.cta h2{margin-top:0;color:#fffaf0}
+.footer{background:var(--sage-dark);color:#eee6d8;padding:45px 24px;text-align:center;font-size:.92rem}
+@media(max-width:800px){
+ .hero{grid-template-columns:1fr;padding-top:48px}
+ .hero-card{min-height:300px}
+ .nav{display:none}
+ .recipe-grid,.tip-grid{grid-template-columns:1fr}
+ h1{font-size:3.5rem}
+}
+</style>
 </head>
-
 <body>
-  <div id="root"></div>
+<header class="site-header">
+  <div class="topbar">
+    <div class="logo">Hearth &amp; Harvest</div>
+    <nav class="nav">
+      <a href="#recipe">Recipe</a>
+      <a href="#science">The Science</a>
+      <a href="#troubleshooting">Troubleshooting</a>
+      <a href="#variations">Variations</a>
+    </nav>
+  </div>
+  <div class="hero">
+    <div>
+      <div class="eyebrow">The farmhouse kitchen guide</div>
+      <h1>How to Make Truly Crispy Roasted Potatoes</h1>
+      <p>Golden edges. Shattering crust. Fluffy, steamy centers. This is the complete, expert guide to mastering ultra-crispy roasted potatoes at home.</p>
+    </div>
+    <div class="hero-card" aria-label="Illustration of golden roasted potatoes">
+      <div class="hero-note"><strong>The rule that changes everything:</strong> crispness is built in layers—from the potato variety and surface texture to the pan temperature, spacing, fat, and final seasoning.</div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="intro">
+    <div class="eyebrow">A deep-dive recipe guide</div>
+    <h2>Your new house method for potatoes with a serious crunch</h2>
+    <p>There are roasted potatoes, and then there are the potatoes people remember. The kind that arrive at the table with bronzed corners, rough little ridges, and a crust that crackles under a fork before giving way to a soft, almost buttery middle. This guide explains exactly how to make those potatoes consistently.</p>
+  </section>
+
+  <div class="jump">
+    <strong>Jump to a section</strong>
+    <div class="jump-links">
+      <a href="#recipe">The master recipe</a>
+      <a href="#science">Why crisping works</a>
+      <a href="#potatoes">Choosing potatoes</a>
+      <a href="#method">The step-by-step method</a>
+      <a href="#troubleshooting">Fix common problems</a>
+      <a href="#variations">Flavor variations</a>
+      <a href="#faq">FAQ</a>
+    </div>
+  </div>
+
+  <article class="section" id="recipe">
+    <div class="eyebrow">The master recipe</div>
+    <h2>Ultra-Crispy Roasted Potatoes</h2>
+    <p>This is the dependable farmhouse-kitchen formula: parboil the potatoes, rough up their surfaces, roast them in properly heated fat, and give them enough room to brown. The method is simple, but each stage has a job. Skip one and the final texture can change dramatically.</p>
+
+    <div class="recipe">
+      <div class="recipe-meta">
+        <span class="meta">Serves 4–6</span>
+        <span class="meta">Prep: 20 minutes</span>
+        <span class="meta">Roast: 45–60 minutes</span>
+        <span class="meta">Difficulty: Easy</span>
+      </div>
+      <div class="recipe-grid">
+        <div>
+          <h3>Ingredients</h3>
+          <ul>
+            <li>2½ pounds potatoes, preferably Yukon Gold, russet, or a mix</li>
+            <li>2½ teaspoons kosher salt, divided, plus more for the cooking water</li>
+            <li>⅓ cup neutral oil, olive oil, melted beef drippings, or duck fat</li>
+            <li>½ teaspoon baking soda</li>
+            <li>4 garlic cloves, lightly crushed</li>
+            <li>4–6 sprigs fresh rosemary or thyme</li>
+            <li>Freshly ground black pepper</li>
+            <li>Flaky salt, for finishing</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Equipment</h3>
+          <ul>
+            <li>Large pot</li>
+            <li>Colander</li>
+            <li>Large, heavy rimmed baking sheet</li>
+            <li>Metal spatula or thin turner</li>
+            <li>Kitchen towel or clean tea towel</li>
+          </ul>
+        </div>
+      </div>
+      <h3>Method</h3>
+      <ol>
+        <li><strong>Heat the oven to 450°F.</strong> Put a sturdy rimmed baking sheet in the oven as it heats. A hot pan gives the potatoes an immediate start on browning.</li>
+        <li><strong>Cut the potatoes.</strong> Cut into large, fairly even chunks—roughly 1½ to 2 inches. Uniformity matters more than perfect geometry. Small pieces can burn before larger pieces are tender.</li>
+        <li><strong>Start them in cold, salted water.</strong> Place the potatoes in a large pot and cover with cold water by about an inch. Add enough salt that the water tastes distinctly seasoned. Add the baking soda.</li>
+        <li><strong>Bring to a boil, then simmer.</strong> Cook until the outside is tender and the center still offers a little resistance, usually 8–12 minutes depending on size and variety.</li>
+        <li><strong>Drain and steam-dry.</strong> Drain thoroughly. Let the potatoes sit in the colander for several minutes so surface moisture can evaporate.</li>
+        <li><strong>Rough up the edges.</strong> Shake the colander firmly, or toss the potatoes in the pot. The goal is to create a fluffy, craggy exterior. Those tiny ridges become the most deliciously browned parts.</li>
+        <li><strong>Add the fat.</strong> Carefully remove the hot baking sheet. Pour in the oil or melted fat, then add the potatoes. They should sizzle when they hit the pan.</li>
+        <li><strong>Season and spread.</strong> Add the remaining salt and black pepper. Turn each potato so it is coated in fat. Arrange in a single layer with visible space between pieces.</li>
+        <li><strong>Roast without fussing.</strong> Roast for 25–30 minutes before turning. Continue roasting until the potatoes are deeply golden and crisp, another 20–30 minutes.</li>
+        <li><strong>Finish at the right moment.</strong> Add the garlic and herbs during the final 10–15 minutes if you want them fragrant without burning. Finish with flaky salt and serve immediately.</li>
+      </ol>
+      <div class="callout"><strong>Best texture target:</strong> The exterior should be firm enough to make a light crackle when pressed with a fork, while the interior should collapse into a soft, steamy, almost creamy center.</div>
+    </div>
+  </article>
+
+  <article class="section" id="science">
+    <div class="eyebrow">The science of crunch</div>
+    <h2>Why some roasted potatoes become crisp—and others become pale and soft</h2>
+    <p>Crispy potatoes are not the result of one magic ingredient. They are the result of controlling moisture, surface area, heat, and time. Think of the process as a sequence. First, the potato is cooked enough for the interior to become tender. Then the exterior is deliberately made rough and relatively dry. Finally, intense oven heat drives off remaining moisture while the surface browns in hot fat.</p>
+
+    <h3>1. Moisture is the enemy of a crisp crust</h3>
+    <p>When a wet potato enters the oven, heat is initially spent evaporating water. That is not necessarily bad, but excessive surface moisture delays browning. A crowded pan makes the problem worse because steam has nowhere to escape. Instead of roasting, the potatoes begin to steam one another.</p>
+    <p>This is why the short resting period after draining matters. You are not waiting for the potatoes to become cold. You are allowing surface water to evaporate. The potatoes can still be warm when they go into the oven; they simply should not be dripping wet.</p>
+
+    <h3>2. Rough surfaces create more places to brown</h3>
+    <p>A perfectly smooth potato cube has a limited amount of exposed surface. A potato with a deliberately roughed-up exterior has tiny peaks, folds, and fragments of softened starch. These irregular surfaces increase the area that touches hot fat and hot air. More surface area means more opportunities for browning and crunch.</p>
+    <p>Do not be afraid of a few loose flakes. Those small pieces of potato can become the most intensely crisp bits on the tray. The goal is not to make every potato look polished. The goal is to make every potato delicious.</p>
+
+    <h3>3. The baking soda trick changes the surface</h3>
+    <p>A small amount of baking soda in the cooking water raises the water's alkalinity. In practical kitchen terms, this helps the outside of the potatoes soften and break down more readily while the centers remain intact. Once drained and roughed up, the potatoes develop a starchy coating that can roast into a rough, crunchy shell.</p>
+    <p>Use restraint. Too much baking soda can create an unpleasant flavor and an overly mushy exterior. The amount in the master recipe is intentionally modest.</p>
+
+    <h3>4. Fat transfers heat efficiently</h3>
+    <p>Oil and other cooking fats help the hot surface of the pan transfer heat to the potato. Fat also encourages even browning and contributes its own flavor. A potato that is merely misted with oil may still roast beautifully, but a lightly generous coating is more reliable when your goal is a truly crisp exterior.</p>
+    <p>Different fats create different personalities. Neutral oil keeps the flavor clean. Olive oil brings peppery fruitiness. Duck fat brings richness. Beef drippings produce a deeply savory, old-fashioned roast-potato character. The technique stays the same; the mood changes.</p>
+
+    <h3>5. The pan must be hot—but not overloaded</h3>
+    <p>Preheating the pan is one of the easiest upgrades you can make. A hot metal surface gives the potatoes a strong initial sear. When the potato hits the pan and sizzles, you know the browning process is beginning immediately.</p>
+    <p>But heat cannot compensate for crowding. If the pieces are touching on every side, moisture accumulates between them. Give each piece a little breathing room. If you are doubling the recipe, use two pans rather than forcing everything onto one.</p>
+  </article>
+
+  <article class="section" id="potatoes">
+    <div class="eyebrow">Ingredient decisions</div>
+    <h2>Which potatoes make the crispiest roasted potatoes?</h2>
+    <p>The best potato depends on the texture you want. Some varieties are naturally floury and fluffy; others are waxier and hold their shape. For ultra-crispy roasted potatoes, the most useful choices are varieties that can become tender inside while still developing a dry, browned exterior.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Potato type</th><th>Texture</th><th>Best use</th><th>What to expect</th></tr></thead>
+        <tbody>
+          <tr><td>Yukon Gold</td><td>Creamy, medium-starchy</td><td>All-purpose roasting</td><td>Golden crust with a naturally buttery center.</td></tr>
+          <tr><td>Russet</td><td>High-starch, fluffy</td><td>Maximum contrast</td><td>Very crisp edges and a light, fluffy interior.</td></tr>
+          <tr><td>Red potatoes</td><td>Waxy, firm</td><td>Shape-holding roasts</td><td>Less fluffy, but pleasantly creamy and structured.</td></tr>
+          <tr><td>Baby potatoes</td><td>Varies by variety</td><td>Small whole or halved roasts</td><td>Convenient and attractive, though surface area is important.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>My favorite combination: Yukon Gold plus russet</h3>
+    <p>If you want a tray with contrasting textures, combine Yukon Gold and russet potatoes. The Yukon Gold pieces bring a rich, creamy center, while russets contribute a more dramatic, fluffy interior and a rugged crust. Cut them to similar sizes so they finish at roughly the same time.</p>
+
+    <h3>Do you need to peel them?</h3>
+    <p>No. In fact, leaving the skins on can add flavor and texture. Scrub the potatoes well, remove any eyes or damaged spots, and cut them as needed. Peeling is useful when you want an especially uniform, classic restaurant-style appearance, but it is not necessary for crispness.</p>
+  </article>
+
+  <article class="section" id="method">
+    <div class="eyebrow">The complete technique</div>
+    <h2>Every step, explained in practical kitchen detail</h2>
+
+    <h3>Cut large enough for a tender center</h3>
+    <p>Roasted potatoes need enough mass to develop the contrast that makes them special. If you cut them too small, they can become crunchy all the way through. That may be tasty, but it is not the classic crisp-outside, fluffy-inside experience. Pieces around 1½ to 2 inches are a dependable starting point.</p>
+
+    <h3>Salt the cooking water generously</h3>
+    <p>Seasoning only the exterior can leave the center bland. Starting in salted water gives the potato a chance to absorb seasoning as it cooks. You do not need to measure the salt with laboratory precision; the water should taste noticeably seasoned rather than flat.</p>
+
+    <h3>Stop boiling before the centers fall apart</h3>
+    <p>The ideal parboiled potato is tender around the edges but not collapsing. A knife should enter with some resistance. If the potatoes are already completely soft, they may break apart during roughing and become difficult to turn on the tray.</p>
+
+    <h3>Rough them up more than feels natural</h3>
+    <p>This is the moment many cooks underdo. A gentle stir is not enough. Shake the drained potatoes until the edges look fuzzy and irregular. You are creating a starchy coating that will become the crust. The pieces should still be recognizable, but their surfaces should no longer be perfectly smooth.</p>
+
+    <h3>Use a metal tray when possible</h3>
+    <p>A sturdy metal baking sheet is excellent for roasted potatoes because it heats quickly and transfers heat efficiently. Darker pans may brown food more aggressively, while lighter pans can be slightly gentler. Whatever pan you use, avoid lining it with anything that prevents direct contact unless cleanup is your priority over maximum browning.</p>
+
+    <h3>Do not turn too soon</h3>
+    <p>Freshly placed potatoes need time to form a crust. If you turn them repeatedly, you can interrupt browning and cause the pieces to stick or tear. Let the first side develop color before turning. A thin metal spatula is useful for releasing any stubborn pieces without destroying their crust.</p>
+
+    <h3>Season in layers</h3>
+    <p>Salt in the cooking water seasons the interior. Salt before roasting seasons the surface. Flaky salt at the end adds a final pop. These layers are not redundant; they create a more complete flavor profile.</p>
+
+    <div class="tip-grid">
+      <div class="tip"><b>Texture</b><p>Rough edges are not a mistake. They are the architecture of the crust.</p></div>
+      <div class="tip"><b>Heat</b><p>A hot oven and a hot pan work together. Neither can fully replace the other.</p></div>
+      <div class="tip"><b>Space</b><p>If you cannot see some pan between the potatoes, the pan is probably too crowded.</p></div>
+    </div>
+
+    <h3>When should garlic and herbs go in?</h3>
+    <p>Fresh garlic can burn during a long, hot roast. Add lightly crushed cloves during the last 10–15 minutes for a fragrant result. Tender herbs can go in at the beginning if protected by the oil, but adding them later keeps their aroma brighter. Woody herbs such as rosemary and thyme are especially good here.</p>
+
+    <h3>What about onions?</h3>
+    <p>Onions can be wonderful, but they release moisture and sugars. If added too early, they may burn before the potatoes are finished. Add thick wedges or chunks during the second half of roasting, or roast them separately and combine everything at the end.</p>
+  </article>
+
+  <article class="section" id="troubleshooting">
+    <div class="eyebrow">Troubleshooting</div>
+    <h2>Why your potatoes are not crispy—and how to fix them</h2>
+
+    <h3>Problem: The potatoes are pale</h3>
+    <p><strong>Likely causes:</strong> the oven or pan was not hot enough, the potatoes were too wet, or the tray was crowded.</p>
+    <p><strong>Fix:</strong> preheat more thoroughly, let drained potatoes steam-dry, and use a larger tray. You can also roast a little longer, but remember that simply adding time will not solve excessive moisture or crowding.</p>
+
+    <h3>Problem: The potatoes are crisp outside but hard inside</h3>
+    <p><strong>Likely cause:</strong> the pieces were too large or the oven temperature was too aggressive for their size.</p>
+    <p><strong>Fix:</strong> parboil longer next time, or cut the potatoes smaller. If the outside is browning quickly, reduce the oven temperature slightly and continue cooking until the centers are tender.</p>
+
+    <h3>Problem: The potatoes are soft everywhere</h3>
+    <p><strong>Likely causes:</strong> too much moisture, not enough fat, insufficient heat, or overcrowding.</p>
+    <p><strong>Fix:</strong> focus on the fundamentals. Steam-dry after boiling, use enough fat to coat the surfaces, preheat the tray, and leave room around each piece.</p>
+
+    <h3>Problem: The potatoes stick to the pan</h3>
+    <p>Some sticking is normal, especially before the crust has formed. Give the potatoes time before trying to turn them. A thin metal spatula usually works better than a thick silicone tool for releasing a browned crust.</p>
+
+    <h3>Problem: The garlic burns</h3>
+    <p>Add it later. Whole or lightly crushed cloves are more forgiving than minced garlic. Minced garlic has much more surface area and can burn quickly at high roasting temperatures.</p>
+
+    <h3>Problem: The potatoes are greasy</h3>
+    <p>More fat does not automatically mean more crispness. The potatoes should be coated, not swimming. Excess oil can make the crust feel heavy. Drain excess fat if necessary, and remember that the pan should be hot enough to help the surface brown.</p>
+
+    <h3>Problem: The crust is fragile and falls off</h3>
+    <p>The potatoes may have been overboiled, handled too aggressively, or turned before the crust had set. Be enthusiastic when roughing the potatoes before roasting, then gentle once they are on the pan.</p>
+  </article>
+
+  <article class="section" id="variations">
+    <div class="eyebrow">Flavor variations</div>
+    <h2>Build a whole roasted-potato repertoire</h2>
+    <p>Once you master the base method, the flavor possibilities are nearly endless. The important rule is to protect the crisping process. Add ingredients according to how they behave in high heat.</p>
+
+    <h3>Rosemary, garlic, and flaky salt</h3>
+    <p>This is the classic farmhouse combination. Roast with rosemary sprigs and add lightly crushed garlic near the end. Finish with flaky salt. The result is aromatic, savory, and familiar enough to pair with almost anything.</p>
+
+    <h3>Lemon and oregano</h3>
+    <p>Roast the potatoes with oregano and finish with lemon zest and a squeeze of lemon juice. Add the juice after roasting rather than before; excess liquid during roasting can soften the crust.</p>
+
+    <h3>Smoky paprika and cumin</h3>
+    <p>Mix smoked paprika, ground cumin, black pepper, and salt into the oil before coating the potatoes. Use a moderate amount of paprika so it contributes flavor without scorching.</p>
+
+    <h3>Parmesan and herbs</h3>
+    <p>For a deeply savory finish, toss the hot potatoes with finely grated Parmesan, parsley, and black pepper. Add the cheese at the end so it clings to the crust instead of burning on the pan.</p>
+
+    <h3>Mustard and honey glaze</h3>
+    <p>For a sweeter, more dramatic finish, whisk a small amount of Dijon mustard with honey and toss the roasted potatoes just before serving. Because sugar can burn, do not apply a sweet glaze at the beginning of a long roast.</p>
+
+    <h3>Chili crisp-style finish</h3>
+    <p>Toss hot potatoes with a spoonful of chili oil or a crunchy chili topping after roasting. The contrast between the crisp potato and the fragrant, spicy topping is excellent. Keep wet toppings off the tray until the potatoes are fully crisp.</p>
+
+    <h3>Herby green sauce</h3>
+    <p>Serve the potatoes with a spoonful of bright herb sauce made from parsley, lemon, olive oil, garlic, and a little vinegar. The sauce adds freshness and acidity, which is especially useful alongside rich meats or creamy dishes.</p>
+  </article>
+
+  <article class="section">
+    <div class="eyebrow">Planning and serving</div>
+    <h2>How to serve crispy potatoes at their best</h2>
+    <p>Crispy potatoes are at their peak immediately after roasting. The longer they sit, the more steam from the interior migrates toward the crust. That does not make them bad, but it does soften the texture. If you are serving a meal, plan the potatoes so they finish close to the time everyone sits down.</p>
+
+    <h3>For breakfast</h3>
+    <p>Serve with fried or poached eggs, sautéed greens, roasted tomatoes, or a spoonful of sour cream. The potatoes also make an excellent base for a breakfast bowl.</p>
+
+    <h3>For dinner</h3>
+    <p>Pair them with roast chicken, grilled steak, braised vegetables, fish, or a large green salad. A sharp sauce—mustard, salsa verde, chimichurri, or lemony yogurt—can balance their richness.</p>
+
+    <h3>For a holiday table</h3>
+    <p>Prepare the potatoes through the parboiling and roughing stage earlier in the day. Keep them spread out so steam can escape. Roast shortly before serving for the best crust.</p>
+
+    <h3>Can you make them ahead?</h3>
+    <p>Yes, with some compromise. Fully roasted potatoes can be reheated in a hot oven or air fryer until hot and crisp again. Avoid microwaving if crispness is the goal. For the best result, do the prep ahead and roast as close to serving time as possible.</p>
+
+    <h3>Can you use an air fryer?</h3>
+    <p>Absolutely. The same principles apply: parboil, steam-dry, rough up, coat lightly with fat, and avoid crowding. Air fryers are particularly effective because they move hot air around the potatoes. Work in batches if necessary.</p>
+  </article>
+
+  <article class="section" id="faq">
+    <div class="eyebrow">Frequently asked questions</div>
+    <h2>Quick answers for better potatoes</h2>
+    <div class="faq">
+      <details><summary>Do I have to parboil potatoes before roasting?</summary><p>No, but parboiling makes the crisp-outside, tender-inside contrast much easier to achieve. It gives you control over the interior texture while the oven focuses on browning the exterior.</p></details>
+      <details><summary>Should I soak potatoes in water first?</summary><p>Soaking can remove some surface starch, but it is not essential for this method. Parboiling and roughing the potatoes creates a more useful textured surface for maximum crispness.</p></details>
+      <details><summary>Why start potatoes in cold water?</summary><p>Starting in cold water allows the centers and exteriors to heat more gradually. This helps the potatoes cook more evenly instead of having the outside become soft long before the center is tender.</p></details>
+      <details><summary>Can I skip the baking soda?</summary><p>Yes. The potatoes will still roast well. Baking soda is an optional technique that helps encourage a rough, starchy exterior.</p></details>
+      <details><summary>What is the best oil for roasting potatoes?</summary><p>Use a fat you enjoy and that can handle the oven temperature. Neutral oil is reliable, olive oil is flavorful, and rendered animal fats add richness. The best choice depends on the rest of the meal.</p></details>
+      <details><summary>How much space do potatoes need?</summary><p>Enough that they are not packed tightly together. A little contact is fine, but every piece should have exposed surfaces where hot air and the pan can do their work.</p></details>
+      <details><summary>Should I cover roasted potatoes?</summary><p>No. Covering traps steam and softens the crust. Keep them uncovered while roasting and while holding them briefly before serving.</p></details>
+      <details><summary>Can I roast potatoes at a lower temperature?</summary><p>Yes, but lower heat generally means a longer route to the same level of browning. For a deeply crisp exterior, a hot oven is usually more effective.</p></details>
+      <details><summary>How do I keep roasted potatoes crisp?</summary><p>Serve them promptly. If you must hold them, keep them uncovered in a warm oven rather than sealing them in a container, which traps steam.</p></details>
+      <details><summary>What is the single most important tip?</summary><p>Control moisture and give the potatoes space. A rough, relatively dry potato placed in hot fat on a hot, uncrowded tray has the conditions it needs to become beautifully crisp.</p></details>
+    </div>
+  </article>
+
+  <section class="cta">
+    <h2>Make the tray everyone reaches for first.</h2>
+    <p>Start with the master method, pay attention to moisture and spacing, and let the potatoes develop their crust before you turn them. Once you learn the sequence, crispy roasted potatoes stop being a lucky accident and become one of the most reliable dishes in your kitchen.</p>
+  </section>
+</main>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6a196dae82284a1c379dd5b8/1jppl8squ';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+<footer class="footer">
+  <p><strong>Hearth &amp; Harvest</strong> · Practical cooking for warm kitchens and hungry tables.</p>
+  <p>© 2026 Hearth &amp; Harvest. Built around good food, patient technique, and potatoes worth sharing.</p>
+</footer>
 </body>
-
-
 </html>
+'''
+
